@@ -23,7 +23,7 @@ namespace DnDWebApp
 
                 try
                 {
-                    Fighter.Initialize(services);
+                    ClassLevelSeedData.Initialize(services);
                 }
                 catch (Exception ex)
                 {

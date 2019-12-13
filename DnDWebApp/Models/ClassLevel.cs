@@ -17,6 +17,7 @@ namespace DnDWebApp.Models
         public string HitDice { get; set; }
         [Required]
         public int Level { get; set; }
+        [Required]
         public string Features { get; set; }
     }
 }

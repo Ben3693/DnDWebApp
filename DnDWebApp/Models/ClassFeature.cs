@@ -15,7 +15,9 @@ namespace DnDWebApp.Models
         [Display(Name = "Feature Description")]
         [Required]
         public string FeatureDescription { get; set; }
+        [Display(Name = "Active?")]
         public bool Active { get; set; }
+        [Display(Name = "Combat?")]
         public bool Combat { get; set; }
     }
 }
