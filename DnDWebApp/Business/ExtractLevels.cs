@@ -8,14 +8,16 @@ namespace DnDWebApp.Business
 {
     public class ExtractLevels
     {
-        /*public string ExtractFeatures
+        public string ExtractFeatures()
         {
-            get
+            string featureList = "";
+            /* TODO foreach level
             {
-                foreach var feature in ClassLevel.Features
-                {
-                }
-            }
-        }*/
+                featureList = featureList + ClassLevel.Feature;
+
+            } */
+
+            return featureList;
+        }
     }
 }

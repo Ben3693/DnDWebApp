@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DnDWebApp.Models;
+using DnDWebApp.Data;
 
 namespace DnDWebApp.Controllers
 {
@@ -20,6 +21,12 @@ namespace DnDWebApp.Controllers
 
         public IActionResult Index()
         {
+            var classLevel = DnDContext.GetClassLevel("Fighter", 2);
+            ViewBag.className = classLevel.ClassName;
+            ViewBag.level = classLevel.Level;
+            ViewBag.hitDice = classLevel.HitDice;
+            ViewBag.features = classLevel.Features;
+
             return View();
         }
 
